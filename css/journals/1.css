@@ -1,0 +1,27 @@
+/* 
+    Document   : 0
+    Created on : 20-abr-2012, 14:37:31
+    Author     : David Andrés Manzano Herrera
+    Description:
+        Plantilla para la personalización de los estilos de la aplicación.
+        Si se quiere personalizar los estilos para que sean similares a la página donde de llama la aplicación, 
+        se debe hacer una copia de este archivo con el nombre X.css donde X corresponde al código de la revista
+        que se este consultando y guardarlo dentro de la carpeta css/journals de esta aplicación
+*/
+a{color: #666666;}
+a:visited{color: #666666;}
+a:hover{color:#004E63;}
+body{font-family: Helvetica,Arial,FreeSans,sans-serif;}
+h1{color: #004E63;}
+#journal{}
+.issue{}
+.issue a{color: #666; font-size: 0.6em;}
+.issue a:hover{color: #004E63;}
+.issue-title {}
+.issue-title a{}
+.article{}
+.article-title{line-height: 0.9em; margin: -2px 0;}
+.article-title a{}
+
+
+
