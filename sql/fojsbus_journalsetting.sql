@@ -1,5 +1,7 @@
 DROP FUNCTION IF EXISTS ojs_revistas.fojsbus_journalsetting;
-CREATE FUNCTION ojs_revistas.`fojsbus_journalsetting`(pjournalid varchar(100), psetting varchar(100),plocale varchar(100)) RETURNS text CHARSET utf8
+
+DELIMITER $$
+CREATE DEFINER=`o_revistas`@`%` FUNCTION ojs_revistas.`fojsbus_journalsetting`(pjournalid varchar(100), psetting varchar(100),plocale varchar(100)) RETURNS text CHARSET utf8
     READS SQL DATA
 BEGIN
 	DECLARE vresult text DEFAULT null;
@@ -11,4 +13,4 @@ BEGIN
      AND js.journal_id = pjournalid;
 
   RETURN vresult;
-END;
+END$$
